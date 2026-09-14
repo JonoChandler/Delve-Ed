@@ -123,21 +123,4 @@ function addResource(subject, year, topic, title, type, filename) {
   });
 }
 
-// Give every module two starter resources (notes + practice), and every paper
-// type two starter past papers, so nothing is a dead end.
-SUBJECTS.forEach((subject) => {
-  Object.entries(subject.years).forEach(([year, yearData]) => {
-    yearData.modules.forEach((topic) => {
-      const topicSlug = slugify(topic);
-      addResource(subject.slug, Number(year), topic, `${topic} — notes`, "Notes", `y${year}-${topicSlug}-notes.pdf`);
-      addResource(subject.slug, Number(year), topic, `${topic} — practice questions`, "Practice Paper", `y${year}-${topicSlug}-practice.pdf`);
-    });
-    yearData.paperTypes.forEach((paperType) => {
-      const paperSlug = slugify(paperType);
-      addResource(subject.slug, Number(year), paperType, `2023 ${paperType.replace(/s$/, "")}`, "Past Paper", `y${year}-${paperSlug}-2023.pdf`);
-      addResource(subject.slug, Number(year), paperType, `2022 ${paperType.replace(/s$/, "")}`, "Past Paper", `y${year}-${paperSlug}-2022.pdf`);
-    });
-  });
-});
-
 RESOURCES.push({ subject: "maths-ext1", year: 12, topic: "Proof", title: "Mathematical Induction - Challenging Questions", type: "Worksheet", file: "resources/maths-ext1/Mathematical Induction - Challenging Questions.pdf" });
