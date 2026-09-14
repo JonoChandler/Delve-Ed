@@ -139,4 +139,5 @@ SUBJECTS.forEach((subject) => {
     });
   });
 });
-addResource("maths-ext1", 12, "Proof", "Mathematical Induction - Challenging Questions", "Worksheet", "resources/maths-ext1/Mathematical Induction - Challenging Questions.pdf") {
+
+RESOURCES.push({ subject: "maths-ext1", year: 12, topic: "Proof", title: "Mathematical Induction - Challenging Questions", type: "Worksheet", file: "resources/maths-ext1/Mathematical Induction - Challenging Questions.pdf" });
