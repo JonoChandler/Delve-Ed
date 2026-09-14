@@ -124,3 +124,5 @@ function addResource(subject, year, topic, title, type, filename) {
 }
 
 RESOURCES.push({ subject: "maths-ext1", year: 12, topic: "Proof", title: "Mathematical Induction - Challenging Questions", type: "Worksheet", file: "resources/maths-ext1/Mathematical Induction - Challenging Questions.pdf" });
+RESOURCES.push({ subject: "maths-ext1", year: 12, topic: "Proof", title: "Mathematical Induction - Summation Questions", type: "Worksheet", file: "resources/maths-ext1/Mathematical Induction - Summation Questions.pdf" });
+RESOURCES.push({ subject: "maths-ext1", year: 12, topic: "Proof", title: "Mathematical Induction - Divisibility Questions", type: "Worksheet", file: "resources/maths-ext1/Mathematical Induction - Divisibility Questions.pdf" });
